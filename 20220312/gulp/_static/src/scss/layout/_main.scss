@@ -1,0 +1,429 @@
+@use "../global" as *;
+/*
+** 各セクションの幅の設定
+*/
+.container {
+  width: calc(100vw - 300px);
+  margin-left: 300px;
+
+  // スマホのレスポンシブ
+  @include mq(md) {
+    @include marginx-auto;
+    width: 100%;
+  }
+}
+.content-width {
+  max-width: 900px;
+  height: auto;
+  @include marginx-auto;
+
+  // スマホレスポンシブ
+  @include mq(md) {
+    @include page-inner;
+  }
+}
+/*
+** articleのタイトルレイアウト設定
+*/
+.article__title {
+  font-size: rem(28);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $color-white;
+
+  // タブレットのレイアウトデザイン
+  @include mq(md) {
+    font-size: rem(22);
+  }
+
+  // スマホのレイアウトデザイン
+  @include mq(sm) {
+    font-size: rem(20);
+    margin-bottom: rem(30);
+  }
+
+  &.-black {
+    // カラーがブラックの場合
+    color: $color-black;
+  }
+  &::after,
+  &::before {
+    border-top: 1px solid;
+    content: "";
+    width: calc(240 / 900) * 100%; /* 線の長さ */
+    // スマホのレイアウトデザイン
+    @include mq(sm) {
+      width: rem(45);
+    }
+  }
+  &::before {
+    margin-right: 2.4em;
+
+    // スマホのレイアウトデザイン
+    @include mq(sm) {
+      margin-right: 1em;
+    }
+  }
+  &::after {
+    margin-left: 2.4em;
+
+    // スマホのレイアウトデザイン
+    @include mq(sm) {
+      margin-left: 1em;
+    }
+  }
+  &--01 {
+    padding-top: rem(10);
+    margin-bottom: rem(49);
+  }
+
+  &--02 {
+    padding-top: rem(153);
+    margin-bottom: rem(56);
+  }
+  &--03 {
+    padding-top: rem(114);
+  }
+  &--04 {
+    padding-top: rem(94);
+  }
+}
+
+/*
+** fv articleのバックグラウンド
+*/
+.article-bg {
+  width: 100%;
+  height: 80.4vh;
+
+  // スマホレスポンシブ
+  @include mq(sm) {
+    height: 80vh;
+  }
+
+  img {
+    position: fixed;
+    top: rem(-230);
+    z-index: -10;
+    width: 100%;
+    //タブレットレスポンシブ
+    @include mq(md) {
+      top: 0;
+    }
+    //スマホレスポンシブ
+    @include mq(sm) {
+      height: 80vh;
+      top: rem(72);
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}
+.bg-white {
+  background-color: $color-white;
+}
+.bg-black {
+  background: rgba(0, 0, 0, 0.8);
+}
+.bg-gray {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+/*
+** 建築事例のレイアウト
+*/
+.article {
+  position: relative;
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: rem(50);
+    column-gap: rem(58);
+    padding: 0 rem(20);
+
+    // スマホのレイアウトデザイン
+    @include mq(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &-card {
+    position: relative;
+    border: 1px solid $color-white;
+    max-width: 400px;
+    height: auto;
+    &:hover {
+      opacity: 0.8;
+      background-color: gray;
+    }
+    &__thumbnail {
+      position: relative;
+      overflow: hidden;
+      padding-top: percentage(256 / 402);
+      aspect-ratio: 402 / 256;
+    }
+    &__img {
+      @include cover-image;
+    }
+    &__title {
+      font-size: rem(12);
+      position: absolute;
+      left: rem(5);
+      bottom: rem(1);
+      color: $color-white;
+      z-index: 2;
+    }
+  }
+  //カード全体をリンクするためのCSS
+  &__link {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/*
+** 明るいHOUSEの現状のレイアウト
+*/
+
+.feature-contents {
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // justify-items: center;
+  padding-bottom: rem(155);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.feature-content {
+  flex-basis: 30%;
+  color: $color-white;
+  text-align: center;
+  font-size: 0.875rem;
+  &__cercle {
+    width: 100%;
+    height: auto;
+    a {
+      position: relative;
+      overflow: hidden;
+      display: block;
+      font-size: rem(14);
+      padding: calc(50% - 11px) 0;
+      border-radius: 50%;
+      border: 1px solid #fff;
+
+      &::before {
+        content: "";
+        color: red;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        top: 0;
+        left: -100%;
+        opacity: 0.3;
+        transition: 0.5s;
+      }
+      &:hover::before {
+        left: 0;
+      }
+
+      // スマホレイアウト
+      @include mq(md) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__title {
+    font-size: rem(16);
+    padding-top: rem(9);
+  }
+  &__lead {
+    margin-top: rem(-3);
+  }
+}
+
+/*
+** 家ができるまでの流れのレイアウトs
+*/
+.article__lead {
+  padding: rem(45) 0 0 rem(20);
+  margin-bottom: rem(55);
+}
+
+// cartのレイアウト
+.cart {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-left: rem(19);
+
+  // スマホレイアウト
+  @include mq(sm) {
+    flex-direction: column;
+  }
+  &-step {
+    flex-basis: calc(200 / 900 * 100%);
+    text-align: center;
+  }
+  &-description {
+    flex-basis: 65%;
+    margin-right: rem(22);
+  }
+}
+// cartの左側のレイアウト
+.cart-step {
+  &__list {
+    position: relative;
+    z-index: 1;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 50;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 100%;
+      background-color: $color-yellow;
+      z-index: 0;
+
+      // スマホレイアウト
+      @include mq(sm) {
+        width: 100px;
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #414141;
+    color: $color-white;
+    margin-bottom: rem(60);
+    font-size: rem(14);
+    z-index: 1;
+
+    // スマホレイアウト
+    @include mq(sm) {
+      width: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      border-top: 30px solid #414141;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+
+      //スマホレイアウト
+      @include mq(sm) {
+        border-left: 185px solid transparent;
+        border-right: 185px solid transparent;
+      }
+    }
+  }
+}
+// cartの右側レイアウト
+.cart-description {
+  // スマホレイアウト
+  @include mq(md) {
+    margin-left: rem(45);
+  }
+  &__title {
+    position: relative;
+    line-height: 1.35;
+    font-size: rem(20);
+    border-bottom: 1px solid $color-black;
+  }
+  &__lead {
+    padding-top: rem(6);
+    padding-bottom: rem(42);
+  }
+}
+//数字のレイアウト
+.cercle {
+  position: absolute;
+  background-color: #414141;
+  color: $color-white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  left: 2px;
+  left: -45px;
+  line-height: 1.8;
+}
+
+/*
+** お問い合わせのレイアウト
+*/
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: rem(43);
+  padding: 0 rem(20);
+  padding-bottom: rem(160);
+
+  // スマホレイアウト
+  @include mq(md) {
+    grid-template-columns: 1fr;
+    place-items: center;
+    row-gap: rem(20);
+  }
+}
+
+.contact-card {
+  position: relative;
+  border: 1px solid $color-black;
+  width: 258px;
+  height: 183px;
+  display: grid;
+  place-items: center;
+
+  // スマホレイアウト
+  @include mq(md) {
+    width: 201px;
+  }
+
+  &:hover {
+    outline: solid 3px #121212;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: 2px;
+    right: 2px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #121212;
+  }
+  &__link {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__description {
+    font-size: rem(14);
+  }
+}

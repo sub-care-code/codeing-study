@@ -1,0 +1,36 @@
+@use "../global" as *;
+
+.footer {
+  background-color: $color-black;
+  color: $color-white;
+  &-nav {
+    padding-top: rem(45);
+    font-size: rem(14);
+    &__list {
+      display: flex;
+      justify-content: center;
+
+      // スマホレイアウト
+      @include mq(sm) {
+        flex-wrap: wrap;
+        font-size: rem(14);
+      }
+    }
+    &__item {
+      padding: 0 rem(20);
+      border-right: 1px solid $color-white;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: rem(14);
+  letter-spacing: 0.03em;
+  @include l_height(12, 21);
+  padding-top: rem(49);
+  padding-bottom: rem(20);
+}

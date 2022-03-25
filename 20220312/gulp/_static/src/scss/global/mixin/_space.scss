@@ -1,0 +1,114 @@
+@use "../setting" as *;
+
+/* margin */
+$spacer_rates: 0, 0.25, 0.5, 1, 1.5, 3;
+.my,
+.mt {
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      margin-top: ($spacer * nth($spacer_rates, $i + 1)) !important;
+    }
+  }
+  &-auto {
+    margin-top: auto !important;
+  }
+}
+.my,
+.mb {
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      margin-bottom: ($spacer * nth($spacer_rates, $i + 1)) !important;
+    }
+  }
+  &-auto {
+    margin-bottom: auto !important;
+  }
+}
+.mx,
+.ml {
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      margin-left: ($spacer * nth($spacer_rates, $i + 1)) !important;
+    }
+  }
+  &-auto {
+    margin-left: auto !important;
+  }
+}
+.mx,
+.mr {
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      margin-right: ($spacer * nth($spacer_rates, $i + 1)) !important;
+    }
+  }
+  &-auto {
+    margin-right: auto !important;
+  }
+}
+.m {
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      margin: ($spacer * nth($spacer_rates, $i + 1)) !important;
+    }
+  }
+  &-auto {
+    margin: auto !important;
+  }
+}
+
+/* padding */
+.py,
+.pt {
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      padding-top: ($spacer * nth($spacer_rates, $i + 1)) !important;
+    }
+  }
+  &-auto {
+    padding-top: auto !important;
+  }
+}
+.py,
+.pb {
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      padding-bottom: ($spacer * nth($spacer_rates, $i + 1)) !important;
+    }
+  }
+  &-auto {
+    padding-bottom: auto !important;
+  }
+}
+.px,
+.pl {
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      padding-left: ($spacer * nth($spacer_rates, $i + 1)) !important;
+    }
+  }
+  &-auto {
+    padding-left: auto !important;
+  }
+}
+.px,
+.pr {
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      padding-right: ($spacer * nth($spacer_rates, $i + 1)) !important;
+    }
+  }
+  &-auto {
+    padding-right: auto !important;
+  }
+}
+.p {
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      padding: ($spacer * nth($spacer_rates, $i + 1)) !important;
+    }
+  }
+  &-auto {
+    padding: auto !important;
+  }
+}

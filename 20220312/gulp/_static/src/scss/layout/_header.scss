@@ -1,0 +1,143 @@
+@use "../global" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  padding: rem(50) rem(45);
+  width: 300px;
+  padding-top: rem(40);
+  background-color: #fff;
+  // スマホレスポンシブレイアウト
+  @include mq(md) {
+    width: 100%;
+    padding: rem(12) rem(20);
+    z-index: 99;
+  }
+}
+
+// site-logoのレイアウト
+.link-block {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo__img {
+  width: 53px;
+  height: auto;
+
+  @include mq(sm) {
+    width: 40px;
+  }
+}
+
+.site-logo__title {
+  font-size: rem(20);
+  padding-left: rem(7);
+  letter-spacing: 1px;
+
+  // スマホレスポンシブレイアウト
+  @include mq(sm) {
+    font-size: rem(18);
+  }
+}
+
+// glabal-navのレイアウト
+.g-nav {
+  padding-top: rem(27);
+  transition: all 5s;
+
+  // スマホのレスポンシブデザイン
+  @include mq(md) {
+    display: none;
+    &.active {
+      display: block;
+      height: 100vh;
+    }
+  }
+
+  &__list {
+    font-size: rem(14);
+
+    @include mq(sm) {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__item {
+    line-height: 1.2;
+    a {
+      display: inline-block;
+      padding: rem(7.2) 0;
+      @include mq(sm) {
+        padding: rem(20);
+      }
+    }
+  }
+}
+/*
+**header-snsのレイアウト
+*/
+.header-sns {
+  margin-top: rem(52);
+  font-size: rem(14);
+  // スマホのレスポンシブデザイン
+  @include mq(md) {
+    display: none;
+  }
+  a {
+    padding: rem(6.3) 0;
+    display: block;
+  }
+}
+
+/*
+** ハンバーガーメニューのレイアウト
+*/
+
+.h-menu {
+  display: none;
+  position: absolute;
+  top: rem(10);
+  right: rem(10);
+  width: rem(40);
+  height: rem(40);
+
+  // スマホ時に表示
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.h-menu__bar {
+  display: inline-block;
+  position: absolute;
+  top: rem(20);
+  left: 14%;
+  width: 70%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: $color-black;
+  transition: 0.3s;
+
+  &.-top {
+    top: rem(10);
+
+    &.click {
+      transform: translateY(10px) rotate(315deg);
+    }
+  }
+
+  &.-midle {
+    &.click {
+      opacity: 0;
+    }
+  }
+  &.-bottom {
+    top: rem(30);
+    &.click {
+      transform: translateY(-10px) rotate(-315deg);
+    }
+  }
+}

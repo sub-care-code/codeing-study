@@ -1,0 +1,22 @@
+@use "../global" as *;
+
+.page-top {
+  border-radius: 50%;
+  border: 1px solid $color-white;
+  background-color: $color-black;
+  width: rem(50);
+  height: rem(50);
+  position: fixed;
+  right: rem(20);
+  bottom: rem(20);
+  z-index: 100;
+  &::after {
+    border-bottom: 15px solid $color-white;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    content: "";
+    position: relative;
+    left: 30%;
+    top: -15%;
+  }
+}

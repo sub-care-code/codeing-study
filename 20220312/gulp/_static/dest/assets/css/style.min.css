@@ -1,0 +1,1646 @@
+@charset "UTF-8";
+
+/*
+** color
+*/
+
+/*
+** font-family
+*/
+
+/*
+**background-color
+*/
+
+/* スペーサー */
+
+/*
+** box-shadow
+*/
+
+/*
+** text-shadow
+*/
+
+/*
+** コンテンツ・ページ幅
+*/
+
+/*
+** pxをremに変換する
+** $baseFontsizeを基準にする
+*/
+
+/*
+** pxをvwに変換
+** $vieportを基準にする
+*/
+
+/*
+** line-heightの設定
+*/
+
+/* 呼び出し例
+.class {
+  @include l_height(font-size , 行送り);
+}
+*/
+
+/*
+** letter-spacingの設定
+*/
+
+/* 呼び出し例
+.class {
+	@include l_spacing(200);
+}
+*/
+
+/*
+** ブレークポイント 
+*/
+
+/*
+@include mq(md) {
+font-size:rem(16);
+}
+*/
+
+/* margin */
+
+.my-0,
+.mt-0 {
+  margin-top: 0rem !important;
+}
+
+.my-1,
+.mt-1 {
+  margin-top: 0.25rem !important;
+}
+
+.my-2,
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.my-3,
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.my-4,
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.my-5,
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.my-auto,
+.mt-auto {
+  margin-top: auto !important;
+}
+
+.my-0,
+.mb-0 {
+  margin-bottom: 0rem !important;
+}
+
+.my-1,
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.my-2,
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.my-3,
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.my-4,
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.my-5,
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+.my-auto,
+.mb-auto {
+  margin-bottom: auto !important;
+}
+
+.mx-0,
+.ml-0 {
+  margin-left: 0rem !important;
+}
+
+.mx-1,
+.ml-1 {
+  margin-left: 0.25rem !important;
+}
+
+.mx-2,
+.ml-2 {
+  margin-left: 0.5rem !important;
+}
+
+.mx-3,
+.ml-3 {
+  margin-left: 1rem !important;
+}
+
+.mx-4,
+.ml-4 {
+  margin-left: 1.5rem !important;
+}
+
+.mx-5,
+.ml-5 {
+  margin-left: 3rem !important;
+}
+
+.mx-auto,
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mx-0,
+.mr-0 {
+  margin-right: 0rem !important;
+}
+
+.mx-1,
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mx-2,
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
+
+.mx-3,
+.mr-3 {
+  margin-right: 1rem !important;
+}
+
+.mx-4,
+.mr-4 {
+  margin-right: 1.5rem !important;
+}
+
+.mx-5,
+.mr-5 {
+  margin-right: 3rem !important;
+}
+
+.mx-auto,
+.mr-auto {
+  margin-right: auto !important;
+}
+
+.m-0 {
+  margin: 0rem !important;
+}
+
+.m-1 {
+  margin: 0.25rem !important;
+}
+
+.m-2 {
+  margin: 0.5rem !important;
+}
+
+.m-3 {
+  margin: 1rem !important;
+}
+
+.m-4 {
+  margin: 1.5rem !important;
+}
+
+.m-5 {
+  margin: 3rem !important;
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+/* padding */
+
+.py-0,
+.pt-0 {
+  padding-top: 0rem !important;
+}
+
+.py-1,
+.pt-1 {
+  padding-top: 0.25rem !important;
+}
+
+.py-2,
+.pt-2 {
+  padding-top: 0.5rem !important;
+}
+
+.py-3,
+.pt-3 {
+  padding-top: 1rem !important;
+}
+
+.py-4,
+.pt-4 {
+  padding-top: 1.5rem !important;
+}
+
+.py-5,
+.pt-5 {
+  padding-top: 3rem !important;
+}
+
+.py-auto,
+.pt-auto {
+  padding-top: auto !important;
+}
+
+.py-0,
+.pb-0 {
+  padding-bottom: 0rem !important;
+}
+
+.py-1,
+.pb-1 {
+  padding-bottom: 0.25rem !important;
+}
+
+.py-2,
+.pb-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+.py-3,
+.pb-3 {
+  padding-bottom: 1rem !important;
+}
+
+.py-4,
+.pb-4 {
+  padding-bottom: 1.5rem !important;
+}
+
+.py-5,
+.pb-5 {
+  padding-bottom: 3rem !important;
+}
+
+.py-auto,
+.pb-auto {
+  padding-bottom: auto !important;
+}
+
+.px-0,
+.pl-0 {
+  padding-left: 0rem !important;
+}
+
+.px-1,
+.pl-1 {
+  padding-left: 0.25rem !important;
+}
+
+.px-2,
+.pl-2 {
+  padding-left: 0.5rem !important;
+}
+
+.px-3,
+.pl-3 {
+  padding-left: 1rem !important;
+}
+
+.px-4,
+.pl-4 {
+  padding-left: 1.5rem !important;
+}
+
+.px-5,
+.pl-5 {
+  padding-left: 3rem !important;
+}
+
+.px-auto,
+.pl-auto {
+  padding-left: auto !important;
+}
+
+.px-0,
+.pr-0 {
+  padding-right: 0rem !important;
+}
+
+.px-1,
+.pr-1 {
+  padding-right: 0.25rem !important;
+}
+
+.px-2,
+.pr-2 {
+  padding-right: 0.5rem !important;
+}
+
+.px-3,
+.pr-3 {
+  padding-right: 1rem !important;
+}
+
+.px-4,
+.pr-4 {
+  padding-right: 1.5rem !important;
+}
+
+.px-5,
+.pr-5 {
+  padding-right: 3rem !important;
+}
+
+.px-auto,
+.pr-auto {
+  padding-right: auto !important;
+}
+
+.p-0 {
+  padding: 0rem !important;
+}
+
+.p-1 {
+  padding: 0.25rem !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+
+.p-4 {
+  padding: 1.5rem !important;
+}
+
+.p-5 {
+  padding: 3rem !important;
+}
+
+.p-auto {
+  padding: auto !important;
+}
+
+/*
+** ブロック要素の真ん中にレイアウト
+*/
+
+/*
+** セクションのbottom設定
+*/
+
+/*
+** セクションのTOP設定
+*/
+
+/*
+** page-innerの余白
+*/
+
+/*
+Theme Name:WordPressでのコーディング時には利用
+version:1.0.0
+Author:massu
+Author URI:
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+
+/* ============================================ */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+
+html {
+  line-height: 1.6;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+
+/* ============================================ */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+
+/* ============================================ */
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+
+/* ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+
+/* ============================================ */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+
+/* ============================================ */
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+
+/* ============================================ */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+
+/* ============================================ */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content */
+
+/* ============================================ */
+
+/**
+ * Prevent vertical alignment issues.
+ */
+
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+
+/* ============================================ */
+
+/**
+ * Reset form fields to make them styleable
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border-radius: 0;
+  text-align: inherit;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button[disabled],
+[type=button][disabled],
+[type=reset][disabled],
+[type=submit][disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+
+select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Remove padding
+ */
+
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+
+/* ============================================ */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+
+/* ============================================ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Misc */
+
+/* ============================================ */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*
+** font-familyの設定
+*/
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  top: 10;
+  left: 30;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  padding: 3.125rem 2.8125rem;
+  width: 300px;
+  padding-top: 2.5rem;
+  background-color: #fff;
+}
+
+.link-block {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo__img {
+  width: 53px;
+  height: auto;
+}
+
+.site-logo__title {
+  font-size: 1.25rem;
+  padding-left: 0.4375rem;
+  letter-spacing: 1px;
+}
+
+.g-nav {
+  padding-top: 1.6875rem;
+  transition: all 5s;
+}
+
+.g-nav__list {
+  font-size: 0.875rem;
+}
+
+.g-nav__item {
+  line-height: 1.2;
+}
+
+.g-nav__item a {
+  display: inline-block;
+  padding: 0.45rem 0;
+}
+
+/*
+**header-snsのレイアウト
+*/
+
+.header-sns {
+  margin-top: 3.25rem;
+  font-size: 0.875rem;
+}
+
+.header-sns a {
+  padding: 0.39375rem 0;
+  display: block;
+}
+
+/*
+** ハンバーガーメニューのレイアウト
+*/
+
+.h-menu {
+  display: none;
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.h-menu__bar {
+  display: inline-block;
+  position: absolute;
+  top: 1.25rem;
+  left: 14%;
+  width: 70%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #121212;
+  transition: 0.3s;
+}
+
+.h-menu__bar.-top {
+  top: 0.625rem;
+}
+
+.h-menu__bar.-top.click {
+  transform: translateY(10px) rotate(315deg);
+}
+
+.h-menu__bar.-midle.click {
+  opacity: 0;
+}
+
+.h-menu__bar.-bottom {
+  top: 1.875rem;
+}
+
+.h-menu__bar.-bottom.click {
+  transform: translateY(-10px) rotate(-315deg);
+}
+
+.footer {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.footer-nav {
+  padding-top: 2.8125rem;
+  font-size: 0.875rem;
+}
+
+.footer-nav__list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav__item {
+  padding: 0 1.25rem;
+  border-right: 1px solid #ffffff;
+}
+
+.footer-nav__item:last-child {
+  border-right: none;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.875rem;
+  letter-spacing: 0.03em;
+  line-height: 1.75;
+  padding-top: 3.0625rem;
+  padding-bottom: 1.25rem;
+}
+
+/*
+** 各セクションの幅の設定
+*/
+
+.container {
+  width: calc(100vw - 300px);
+  margin-left: 300px;
+}
+
+.content-width {
+  max-width: 900px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+** articleのタイトルレイアウト設定
+*/
+
+.article__title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.article__title.-black {
+  color: #121212;
+}
+
+.article__title::after,
+.article__title::before {
+  border-top: 1px solid;
+  content: "";
+  width: 26.6666666667%;
+  /* 線の長さ */
+}
+
+.article__title::before {
+  margin-right: 2.4em;
+}
+
+.article__title::after {
+  margin-left: 2.4em;
+}
+
+.article__title--01 {
+  padding-top: 0.625rem;
+  margin-bottom: 3.0625rem;
+}
+
+.article__title--02 {
+  padding-top: 9.5625rem;
+  margin-bottom: 3.5rem;
+}
+
+.article__title--03 {
+  padding-top: 7.125rem;
+}
+
+.article__title--04 {
+  padding-top: 5.875rem;
+}
+
+/*
+** fv articleのバックグラウンド
+*/
+
+.article-bg {
+  width: 100%;
+  height: 80.4vh;
+}
+
+.article-bg img {
+  position: fixed;
+  top: -14.375rem;
+  z-index: -10;
+  width: 100%;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-black {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.bg-gray {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+
+/*
+** 建築事例のレイアウト
+*/
+
+.article {
+  position: relative;
+}
+
+.article-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3.625rem 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3.125rem;
+  -moz-column-gap: 3.625rem;
+  column-gap: 3.625rem;
+  padding: 0 1.25rem;
+}
+
+.article-card {
+  position: relative;
+  border: 1px solid #ffffff;
+  max-width: 400px;
+  height: auto;
+}
+
+.article-card:hover {
+  opacity: 0.8;
+  background-color: gray;
+}
+
+.article-card__thumbnail {
+  position: relative;
+  overflow: hidden;
+  padding-top: 63.6815920398%;
+  aspect-ratio: 402/256;
+}
+
+.article-card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.article-card__title {
+  font-size: 0.75rem;
+  position: absolute;
+  left: 0.3125rem;
+  bottom: 0.0625rem;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.article__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+** 明るいHOUSEの現状のレイアウト
+*/
+
+.feature-contents {
+  padding-bottom: 9.6875rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature-content {
+  flex-basis: 30%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.feature-content__cercle {
+  width: 100%;
+  height: auto;
+}
+
+.feature-content__cercle a {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  font-size: 0.875rem;
+  padding: calc(50% - 11px) 0;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.feature-content__cercle a::before {
+  content: "";
+  color: red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: -100%;
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.feature-content__cercle a:hover::before {
+  left: 0;
+}
+
+.feature-content__title {
+  font-size: 1rem;
+  padding-top: 0.5625rem;
+}
+
+.feature-content__lead {
+  margin-top: -0.1875rem;
+}
+
+/*
+** 家ができるまでの流れのレイアウトs
+*/
+
+.article__lead {
+  padding: 2.8125rem 0 0 1.25rem;
+  margin-bottom: 3.4375rem;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-left: 1.1875rem;
+}
+
+.cart-step {
+  flex-basis: 22.2222222222%;
+  text-align: center;
+}
+
+.cart-description {
+  flex-basis: 65%;
+  margin-right: 1.375rem;
+}
+
+.cart-step__list {
+  position: relative;
+  z-index: 1;
+}
+
+.cart-step__list::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 100%;
+  background-color: #ffdd00;
+  z-index: 0;
+}
+
+.cart-step__item {
+  position: relative;
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  background-color: #414141;
+  color: #ffffff;
+  margin-bottom: 3.75rem;
+  font-size: 0.875rem;
+  z-index: 1;
+}
+
+.cart-step__item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: 30px solid #414141;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.cart-description__title {
+  position: relative;
+  line-height: 1.35;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #121212;
+}
+
+.cart-description__lead {
+  padding-top: 0.375rem;
+  padding-bottom: 2.625rem;
+}
+
+.cercle {
+  position: absolute;
+  background-color: #414141;
+  color: #ffffff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  left: 2px;
+  left: -45px;
+  line-height: 1.8;
+}
+
+/*
+** お問い合わせのレイアウト
+*/
+
+.contact-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2.6875rem 1fr 2.6875rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 2.6875rem;
+  column-gap: 2.6875rem;
+  padding: 0 1.25rem;
+  padding-bottom: 10rem;
+}
+
+.contact-card {
+  position: relative;
+  border: 1px solid #121212;
+  width: 258px;
+  height: 183px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.contact-card:hover {
+  outline: solid 3px #121212;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.contact-card::after {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  right: 2px;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #121212;
+}
+
+.contact-card__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-card__description {
+  font-size: 0.875rem;
+}
+
+.page-top {
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  background-color: #121212;
+  width: 3.125rem;
+  height: 3.125rem;
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 100;
+}
+
+.page-top::after {
+  border-bottom: 15px solid #ffffff;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  content: "";
+  position: relative;
+  left: 30%;
+  top: -15%;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    z-index: 99;
+  }
+
+  .g-nav {
+    display: none;
+  }
+
+  .g-nav.active {
+    display: block;
+    height: 100vh;
+  }
+
+  .header-sns {
+    display: none;
+  }
+
+  .h-menu {
+    display: block;
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .content-width {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .article__title {
+    font-size: 1.375rem;
+  }
+
+  .article-bg img {
+    top: 0;
+  }
+
+  .feature-content__cercle a {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cart-description {
+    margin-left: 2.8125rem;
+  }
+
+  .contact-cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+    row-gap: 1.25rem;
+  }
+
+  .contact-card {
+    width: 201px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .site-logo__img {
+    width: 40px;
+  }
+
+  .site-logo__title {
+    font-size: 1.125rem;
+  }
+
+  .g-nav__list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .g-nav__item a {
+    padding: 1.25rem;
+  }
+
+  .footer-nav__list {
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+  }
+
+  .article__title {
+    font-size: 1.25rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .article__title::after,
+  .article__title::before {
+    width: 2.8125rem;
+  }
+
+  .article__title::before {
+    margin-right: 1em;
+  }
+
+  .article__title::after {
+    margin-left: 1em;
+  }
+
+  .article-bg {
+    height: 80vh;
+  }
+
+  .article-bg img {
+    height: 80vh;
+    top: 4.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .article-cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .cart {
+    flex-direction: column;
+  }
+
+  .cart-step__list::after {
+    width: 100px;
+  }
+
+  .cart-step__item {
+    width: 100%;
+  }
+
+  .cart-step__item::after {
+    border-left: 185px solid transparent;
+    border-right: 185px solid transparent;
+  }
+}
+/*# sourceMappingURL=map/style.css.map */
